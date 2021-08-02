@@ -1,0 +1,12 @@
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\bin\Release\EntityLayer.dll.config
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\bin\Release\EntityLayer.dll
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\bin\Release\EntityLayer.pdb
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\bin\Release\EntityFramework.dll
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\bin\Release\EntityFramework.xml
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\obj\Release\EntityLayer.csprojAssemblyReference.cache
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\obj\Release\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\obj\Release\EntityLayer.csproj.CopyComplete
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\obj\Release\EntityLayer.dll
+C:\Users\90507\source\repos\BlogMVC\EntityLayer\obj\Release\EntityLayer.pdb

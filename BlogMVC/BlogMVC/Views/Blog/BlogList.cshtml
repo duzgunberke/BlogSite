@@ -1,0 +1,70 @@
+﻿@using PagedList
+@using PagedList.Mvc
+
+@model IEnumerable<EntityLayer.Concrete.Blog>
+    @{ string color=" ";}
+
+<div class="site-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2>Blog Listesi</h2>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var blog in Model)
+            {
+                if (blog.Category.CategoryID == 1)
+                {
+                    color = "post-category text-white bg-primary mb-3";
+                }
+                if (blog.Category.CategoryID == 2)
+                {
+                    color = "post-category text-white bg-warning mb-3";
+                }
+                if (blog.Category.CategoryID == 3)
+                {
+                    color = "post-category text-white bg-success mb-3";
+                }
+                if (blog.Category.CategoryID == 4)
+                {
+                    color = "post-category text-white bg-danger mb-3";
+                }
+                if (blog.Category.CategoryID == 5)
+                {
+                    color = "post-category text-white bg-dark mb-3";
+                }
+                if (blog.Category.CategoryID == 6)
+                {
+                    color = "post-category text-white bg-info mb-3";
+                }
+                if(blog.Category.CategoryID > 6)
+                {
+                    color = "post-category text-white bg-info mb-3";
+                }
+
+
+
+                <div class="col-lg-4 mb-4">
+                    <div class="entry2">
+                        <a href="/Blog/BlogDetails/@blog.BlogID"><img src="@blog.BlogImage" style="height:250px; width:100%" alt="Image" class="img-fluid rounded"></a>
+                        <div class="excerpt">
+                            <span class="@color">@blog.Category.CategoryName</span>
+
+                            <h2><a href="/Blog/BlogDetails/@blog.BlogID">@blog.BlogTitle</a></h2>
+                            <div class="post-meta align-items-center text-left clearfix">
+                                <figure class="author-figure mb-0 mr-3 float-left"><img src="@blog.Author.AuthorImage" alt="Image" class="img-fluid"></figure>
+                                <span class="d-inline-block mt-1"> <a href="#">@blog.Author.AuthorName</a></span>
+                                <span>&nbsp;-&nbsp; @(((DateTime)blog.BlogDate).ToString("dd-MMM-yyyy"))</span>
+                            </div>
+
+                            <p>@blog.BlogContent.Substring(0,blog.BlogContent.Substring(0,200).LastIndexOf(" "))...</p>
+                            <p><a href="/Blog/BlogDetails/@blog.BlogID">Devamını Oku</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page}))

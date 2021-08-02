@@ -1,0 +1,344 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: url(https://i.imgur.com/CZdBKjO.gif) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+  background-color: #342643;
+  height: 100%;
+}
+
+.text-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 9em;
+  font-weight: 700;
+  color: white;
+  position: relative;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+}
+
+.buttons {
+  margin: 30px;
+}
+.buttons a.button {
+  background-color: #342643;
+  font-weight: 700;
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 26px;
+  transition: all 0.2s ease-in-out;
+}
+.buttons a.button:hover {
+  background-color: #4d3864;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+@-webkit-keyframes noise-anim {
+  0% {
+    clip: rect(111px, 9999px, 40px, 0);
+  }
+  5% {
+    clip: rect(14px, 9999px, 137px, 0);
+  }
+  10% {
+    clip: rect(94px, 9999px, 175px, 0);
+  }
+  15% {
+    clip: rect(123px, 9999px, 36px, 0);
+  }
+  20% {
+    clip: rect(126px, 9999px, 132px, 0);
+  }
+  25% {
+    clip: rect(9px, 9999px, 111px, 0);
+  }
+  30% {
+    clip: rect(137px, 9999px, 145px, 0);
+  }
+  35% {
+    clip: rect(123px, 9999px, 141px, 0);
+  }
+  40% {
+    clip: rect(175px, 9999px, 123px, 0);
+  }
+  45% {
+    clip: rect(120px, 9999px, 132px, 0);
+  }
+  50% {
+    clip: rect(9px, 9999px, 182px, 0);
+  }
+  55% {
+    clip: rect(102px, 9999px, 197px, 0);
+  }
+  60% {
+    clip: rect(98px, 9999px, 87px, 0);
+  }
+  65% {
+    clip: rect(87px, 9999px, 13px, 0);
+  }
+  70% {
+    clip: rect(101px, 9999px, 78px, 0);
+  }
+  75% {
+    clip: rect(104px, 9999px, 40px, 0);
+  }
+  80% {
+    clip: rect(167px, 9999px, 178px, 0);
+  }
+  85% {
+    clip: rect(131px, 9999px, 109px, 0);
+  }
+  90% {
+    clip: rect(128px, 9999px, 118px, 0);
+  }
+  95% {
+    clip: rect(52px, 9999px, 17px, 0);
+  }
+  100% {
+    clip: rect(88px, 9999px, 104px, 0);
+  }
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(111px, 9999px, 40px, 0);
+  }
+  5% {
+    clip: rect(14px, 9999px, 137px, 0);
+  }
+  10% {
+    clip: rect(94px, 9999px, 175px, 0);
+  }
+  15% {
+    clip: rect(123px, 9999px, 36px, 0);
+  }
+  20% {
+    clip: rect(126px, 9999px, 132px, 0);
+  }
+  25% {
+    clip: rect(9px, 9999px, 111px, 0);
+  }
+  30% {
+    clip: rect(137px, 9999px, 145px, 0);
+  }
+  35% {
+    clip: rect(123px, 9999px, 141px, 0);
+  }
+  40% {
+    clip: rect(175px, 9999px, 123px, 0);
+  }
+  45% {
+    clip: rect(120px, 9999px, 132px, 0);
+  }
+  50% {
+    clip: rect(9px, 9999px, 182px, 0);
+  }
+  55% {
+    clip: rect(102px, 9999px, 197px, 0);
+  }
+  60% {
+    clip: rect(98px, 9999px, 87px, 0);
+  }
+  65% {
+    clip: rect(87px, 9999px, 13px, 0);
+  }
+  70% {
+    clip: rect(101px, 9999px, 78px, 0);
+  }
+  75% {
+    clip: rect(104px, 9999px, 40px, 0);
+  }
+  80% {
+    clip: rect(167px, 9999px, 178px, 0);
+  }
+  85% {
+    clip: rect(131px, 9999px, 109px, 0);
+  }
+  90% {
+    clip: rect(128px, 9999px, 118px, 0);
+  }
+  95% {
+    clip: rect(52px, 9999px, 17px, 0);
+  }
+  100% {
+    clip: rect(88px, 9999px, 104px, 0);
+  }
+}
+.subtitle:after, .title:after {
+  content: attr(data-content);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes noise-anim-2 {
+  0% {
+    clip: rect(85px, 9999px, 172px, 0);
+  }
+  5% {
+    clip: rect(161px, 9999px, 175px, 0);
+  }
+  10% {
+    clip: rect(48px, 9999px, 63px, 0);
+  }
+  15% {
+    clip: rect(65px, 9999px, 158px, 0);
+  }
+  20% {
+    clip: rect(186px, 9999px, 117px, 0);
+  }
+  25% {
+    clip: rect(120px, 9999px, 76px, 0);
+  }
+  30% {
+    clip: rect(150px, 9999px, 92px, 0);
+  }
+  35% {
+    clip: rect(130px, 9999px, 125px, 0);
+  }
+  40% {
+    clip: rect(23px, 9999px, 198px, 0);
+  }
+  45% {
+    clip: rect(7px, 9999px, 4px, 0);
+  }
+  50% {
+    clip: rect(29px, 9999px, 111px, 0);
+  }
+  55% {
+    clip: rect(83px, 9999px, 101px, 0);
+  }
+  60% {
+    clip: rect(26px, 9999px, 15px, 0);
+  }
+  65% {
+    clip: rect(80px, 9999px, 110px, 0);
+  }
+  70% {
+    clip: rect(164px, 9999px, 95px, 0);
+  }
+  75% {
+    clip: rect(109px, 9999px, 28px, 0);
+  }
+  80% {
+    clip: rect(59px, 9999px, 31px, 0);
+  }
+  85% {
+    clip: rect(4px, 9999px, 111px, 0);
+  }
+  90% {
+    clip: rect(116px, 9999px, 75px, 0);
+  }
+  95% {
+    clip: rect(93px, 9999px, 182px, 0);
+  }
+  100% {
+    clip: rect(23px, 9999px, 26px, 0);
+  }
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(85px, 9999px, 172px, 0);
+  }
+  5% {
+    clip: rect(161px, 9999px, 175px, 0);
+  }
+  10% {
+    clip: rect(48px, 9999px, 63px, 0);
+  }
+  15% {
+    clip: rect(65px, 9999px, 158px, 0);
+  }
+  20% {
+    clip: rect(186px, 9999px, 117px, 0);
+  }
+  25% {
+    clip: rect(120px, 9999px, 76px, 0);
+  }
+  30% {
+    clip: rect(150px, 9999px, 92px, 0);
+  }
+  35% {
+    clip: rect(130px, 9999px, 125px, 0);
+  }
+  40% {
+    clip: rect(23px, 9999px, 198px, 0);
+  }
+  45% {
+    clip: rect(7px, 9999px, 4px, 0);
+  }
+  50% {
+    clip: rect(29px, 9999px, 111px, 0);
+  }
+  55% {
+    clip: rect(83px, 9999px, 101px, 0);
+  }
+  60% {
+    clip: rect(26px, 9999px, 15px, 0);
+  }
+  65% {
+    clip: rect(80px, 9999px, 110px, 0);
+  }
+  70% {
+    clip: rect(164px, 9999px, 95px, 0);
+  }
+  75% {
+    clip: rect(109px, 9999px, 28px, 0);
+  }
+  80% {
+    clip: rect(59px, 9999px, 31px, 0);
+  }
+  85% {
+    clip: rect(4px, 9999px, 111px, 0);
+  }
+  90% {
+    clip: rect(116px, 9999px, 75px, 0);
+  }
+  95% {
+    clip: rect(93px, 9999px, 182px, 0);
+  }
+  100% {
+    clip: rect(23px, 9999px, 26px, 0);
+  }
+}
+.subtitle:before, .title:before {
+  content: attr(data-content);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}

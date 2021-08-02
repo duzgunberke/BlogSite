@@ -1,0 +1,17 @@
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\EntityLayer.dll
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\EntityLayer.pdb
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\FluentValidation.dll
+C:\Users\90507\source\repos\BlogMVC\BusinessLayer\bin\Debug\FluentValidation.xml

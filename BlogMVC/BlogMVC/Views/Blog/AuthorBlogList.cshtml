@@ -1,0 +1,121 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Blog>
+@{
+    ViewBag.Title = "AuthorBlogList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@{string color = ""; }
+@{string durum = ""; }
+@{int rank = 1; }
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Blog Listem</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-striped projects">
+                    <thead>
+                        <tr>
+                            <th style="width: 1%">
+                                ID
+                            </th>
+                            <th style="width: 15%">
+                                Blog Başlık
+                            </th>
+
+                            <th style="width: 20%">
+                                Blog Değerlendirme
+                            </th>
+                            <th style="width: 10%" class="text-center">
+                                Durum
+                            </th>
+                            <th style="width: 20%">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            rank = item.BlogRating * 10;
+                            if (rank >= 85)
+                            {
+                                color = "post-category text-white bg-success mb-3";
+                                durum = "Alev alıyorr 🔥";
+                            }
+                            if (rank >= 75 && rank <= 84)
+                            {
+                                color = "post-category text-white bg-warning mb-3";
+                                durum = "Başarılı 👌";
+                            }
+                            if (rank >= 55 && rank <= 74)
+                            {
+                                color = "post-category text-white bg-danger mb-3";
+                                durum = "Ehhh 🤔";
+                            }
+                            if (rank <= 54)
+                            {
+                                color = "post-category text-white bg-dark mb-3";
+                                durum = "Çöp 🗑";
+                            }
+                            <tr>
+                                <td>@item.BlogID </td>
+                                <td>
+                                    @item.BlogTitle
+                                </td>
+
+                                <td class="project_progress">
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-green" role="progressbar" aria-volumenow="10" aria-volumemin="0" aria-volumemax="100" style="width:@rank%">
+                                        </div>
+                                    </div>
+                                    <small>
+                                        Aldığı Puan %@rank
+                                    </small>
+                                </td>
+                                <td class="project-state">
+                                    <span class="badge badge-@color ">@durum</span>
+                                </td>
+                                <td class="project-actions text-right">
+                                    <a class="btn btn-primary btn-sm" href="/Blog/BlogDetails/@item.BlogID">
+                                        <i class="fas fa-folder">
+                                        </i>
+                                        Sitede Gör
+                                    </a>
+                                    <a class="btn btn-info btn-sm" href="/Blog/UpdateBlog/@item.BlogID">
+                                        <i class="fas fa-pencil-alt">
+                                        </i>
+                                        Düzenle
+                                    </a>
+                                    <a class="btn btn-danger btn-sm" href="/Blog/DeleteBlog/@item.BlogID">
+                                        <i class="fas fa-trash">
+                                        </i>
+                                        Sil
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+    <a href="/Blog/AddNewBlog" class="btn btn-primary">Yeni Blog Ekle</a>
+</body>
+</html>
+
+
+
+
