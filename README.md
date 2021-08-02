@@ -22,13 +22,13 @@
  <img src="https://i.hizliresim.com/kjvuwb6.gif" align="center" style="width: 60%" /></br></br>
  <hr>
  <b>Writing blog panel (with TinyMCE) :</b></br></br>
- <img src="https://i.hizliresim.com/frcwi8g.gif" align="center" style="width: 60%" /></br></br>
+ <img src="https://i.hizliresim.com/cojpuht.gif" align="center" style="width: 60%" /></br></br>
  <hr>
  <b>Blog List :</b></br></br>
- <img src="https://i.hizliresim.com/q92xzzk.gif" align="center" style="width: 60%" /></br></br>
+ <img src="https://i.hizliresim.com/nie9fk3.gif" align="center" style="width: 60%" /></br></br>
  <hr>
   <b>Author list and view of the author's information by admin :</b></br></br>
- <img src="https://i.hizliresim.com/7gr8n1s.gif" align="center" style="width: 60%" /></br></br>
+ <img src="https://i.hizliresim.com/53fn7xb.gif" align="center" style="width: 60%" /></br></br>
  <hr>
   <b>Panel for author approval or removal of comments that are saved passively by default :</b></br></br>
  <img src="https://i.hizliresim.com/isg1k9k.gif" align="center" style="width: 60%" /></br></br>
@@ -51,10 +51,17 @@
  <b>And more...</b></br>
 /*   Project content and tools used are as follows :
          
-         This project consists of 3 basic panels of a library: showcase, admin and user.
-         Especially with the dashboard part of the admin panel, I developed a concrete project 
-         with SQL structures such as Entity Framework, Trigger, Procedure over Linq queries,
-         beyond both the design of a strong interface and crud operations.
+         In the user section of our project, the person who logs in to the site will see all the blogs on 
+         the site, comment on existing blogs, and list blogs belonging to an author or a category.
+         
+         In the author section of our project, our author will be able to write a new blog, make edits to the blogs 
+         he wrote, see the comments made on his own blogs, and send a     message to other authors or the admin.
+         
+         In the admin section of our project, category, blog, communication and all other menus will be authorized. 
+         Comments can be deleted by the admin.
+         
+         We developed our project in N-Tier architectural principles (DataAccess, Entity, Business, Presentation) 
+         without moving away from Solid architecture.
          
           * N-Tier Architecture        
           * Repository Design Pattern
