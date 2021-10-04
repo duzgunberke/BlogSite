@@ -10,3 +10,15 @@ C:\Users\90507\source\repos\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csproj.Cor
 C:\Users\90507\source\repos\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\90507\source\repos\BlogMVC\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\90507\source\repos\BlogMVC\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\obj\Debug\EntityLayer.pdb

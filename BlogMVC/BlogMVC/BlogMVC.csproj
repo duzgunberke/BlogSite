@@ -2270,6 +2270,7 @@
     <Content Include="miniblog\js\owl.carousel.min.js" />
     <Content Include="miniblog\js\popper.min.js" />
     <Content Include="miniblog\js\slick.min.js" />
+    <Content Include="miniblog\me.jpg" />
     <Content Include="miniblog\single.html" />
     <Content Include="401page\style.css" />
     <Content Include="Scripts\bootstrap.js" />
