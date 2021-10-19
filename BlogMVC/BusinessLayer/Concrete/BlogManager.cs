@@ -1,4 +1,6 @@
-﻿using DataAccessLayer.Concrete;
+﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,9 +10,16 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class BlogManager
+    public class BlogManager:IBlogService
     {
         Repository<Blog> repoBlog = new Repository<Blog>();
+
+        IBlogDal _blogDal;
+
+        public BlogManager(IBlogDal blogDal)
+        {
+            _blogDal = blogDal;
+        }
 
         public List<Blog> GetAll()
         {
@@ -60,6 +69,31 @@ namespace BusinessLayer.Concrete
             blog.CategoryID = p.CategoryID;
             blog.AuthorID = p.AuthorID;
             return repoBlog.Update(blog);
+        }
+
+        public List<Blog> GetList()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BlogAdd(Blog blog)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Blog GetByID(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BlogDelete(Blog blog)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BlogUpdate(Blog blog)
+        {
+            throw new NotImplementedException();
         }
     }
 }

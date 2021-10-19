@@ -1,6 +1,9 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using PagedList;
 using PagedList.Mvc;
 using System;
@@ -14,7 +17,7 @@ namespace BlogMVC.Controllers
     public class BlogController : Controller
     {
         // GET: Blog
-        BlogManager blogManager = new BlogManager();
+        BlogManager blogManager = new BlogManager(new EfBlogDal());
 
         [AllowAnonymous]
         public ActionResult Index()
@@ -167,8 +170,22 @@ namespace BlogMVC.Controllers
         [HttpPost]
         public ActionResult AddNewBlog(Blog b)
         {
-            blogManager.BlogAddBL(b);
-            return RedirectToAction("AdminBlogList");
+            BlogValidator blogValidator = new BlogValidator();
+            ValidationResult results = blogValidator.Validate(b);
+            if (results.IsValid)
+            {
+                blogManager.BlogAddBL(b);
+                return RedirectToAction("AdminBlogList");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
+            
         }
 
         public ActionResult DeleteBlog(int id)

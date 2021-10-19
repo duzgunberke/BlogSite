@@ -10,9 +10,11 @@
     <br />
     @Html.Label("Kategori")
     @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CategoryName)
     <br />
     @Html.Label("Kategori Açıklama")
     @Html.TextAreaFor(x => x.CategoryDescription, 3, 20, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x=>x.CategoryDescription)
     <br />
     <button class="btn btn-info">Kaydet</button>
 </form>

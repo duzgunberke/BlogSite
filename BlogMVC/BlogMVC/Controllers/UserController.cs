@@ -1,6 +1,8 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -96,8 +98,22 @@ namespace BlogMVC.Controllers
         [HttpPost]
         public ActionResult AddNewBlog(Blog b)
         {
-            blogManager.BlogAddBL(b);
-            return RedirectToAction("BlogList");
+            BlogValidator blogValidator = new BlogValidator();
+            ValidationResult results = blogValidator.Validate(b);
+            if (results.IsValid)
+            {
+                blogManager.BlogAddBL(b);
+                return RedirectToAction("BlogList");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
+           
         }
 
         public ActionResult LogOut()

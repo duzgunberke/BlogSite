@@ -9,6 +9,7 @@
 
         @Html.Label("Blog Başlığı")
         @Html.TextBoxFor(x => x.BlogTitle, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x=>x.BlogTitle)
         <br />
         @Html.Label("Kategori")
         @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.CategoriNameDropBox, new { @class = "form-control" })
