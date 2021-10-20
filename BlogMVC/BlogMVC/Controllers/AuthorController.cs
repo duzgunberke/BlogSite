@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace BlogMVC.Controllers
     public class AuthorController : Controller
     {
         // GET: Author
-        BlogManager blogManager = new BlogManager();
+        BlogManager blogManager = new BlogManager(new EfBlogDal());
         AuthorManager authorManager = new AuthorManager();
 
         [AllowAnonymous]

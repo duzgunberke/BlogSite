@@ -15,7 +15,7 @@ namespace BlogMVC.Controllers
     {
         // GET: Category
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
-        BlogManager blogManager = new BlogManager();
+        BlogManager blogManager = new BlogManager(new EfBlogDal());
         public ActionResult Index()
         {
             var categoryValues = categoryManager.GetAll();

@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
 using System;
@@ -17,7 +18,7 @@ namespace BlogMVC.Controllers
     {
         // GET: User
         UserProfileManager userProfileManager = new UserProfileManager();
-        BlogManager blogManager = new BlogManager();
+        BlogManager blogManager = new BlogManager(new EfBlogDal());
 
         public ActionResult Index()
         {

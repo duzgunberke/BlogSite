@@ -22,3 +22,15 @@ C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csp
 C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\duzgu\OneDrive\Masaüstü\BlogMVC\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\berke\Documents\GitHub\BlogSite\BlogMVC\EntityLayer\obj\Debug\EntityLayer.pdb
